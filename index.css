@@ -24,7 +24,6 @@ body {
 
 .main {
     background-image: url('bg.jpg');
-    height: 100vh;
     width: 100%;
     position: relative;
     background-position: center center;
@@ -88,7 +87,7 @@ nav div button form select {
 
 
 nav div button form select:hover {
-   
+
     color: var(--hovercolor1);
 }
 
@@ -103,13 +102,12 @@ nav div button:last-child {
 }
 
 nav div button:hover {
-   
+
     color: var(--hovercolor1);
 }
 
-.main nav span.logo h1 i.fa-solid.fa-drum-steelpan {
-    font-size: 20px;
-    color: var(--tertcolor);padding-top: 0.5vh;
+span.logo {
+    display: flex;
 }
 
 span.logo h1 {
@@ -133,34 +131,24 @@ span.logo h1 {
     align-items: center;
     margin-top: 20vh;
     flex-wrap: wrap;
-  padding-bottom: 10vh;
+    padding-bottom: 10vh;
 
-
-    
 }
 
 .planscontainer .plans {
-   min-height: 50vh;
+    min-height: 50vh;
     width: 30vw;
     color: aliceblue;
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px white;
     border-radius: 25px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
     overflow: hidden;
-
-
-
-
-
-  
-
-
 }
 
 .planscontainer .plans h1 {
@@ -195,15 +183,15 @@ i.fa-solid.fa-crown {
     color: var(--seccolor);
 }
 
-.planscontainer .plans ul li {
+.planscontainer .plans li {
     list-style-type: none;
     text-transform: capitalize;
     font-family: "Poppins", serif;
     font-weight: 500;
-  
+
 }
 
-.planscontainer .plans ul li a {
+.planscontainer .plans a {
     text-decoration: none;
     display: block;
     width: 28vw;
@@ -222,11 +210,11 @@ i.fa-solid.fa-crown {
 }
 
 .planscontainer .plans ul li a:hover {
-    
+
     background-color: var(--hovercolor1);
-    
+
     border: 1px solid white;
-   
+
 
 }
 
@@ -242,8 +230,12 @@ i.fa-solid.fa-crown {
     margin-top: 1px;
     padding: 5% 50px;
 
-}.videobox{ display: flex;
-position: relative;}
+}
+
+.videobox {
+    display: flex;
+    position: relative;
+}
 
 .videocontainer .videobox video {
     display: flex;
@@ -269,38 +261,50 @@ position: relative;}
     margin-top: 65px;
 }
 
-.videocontainer .introtext {
+.videocontainerparent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
 
+.videocontainerparent .introtext {
+
+    padding-top: 50px;
     position: absolute;
     color: #caffca;
     font-family: "poppins", serif;
     font-weight: 700;
     font-size: 25px;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 
 }
 
 .loginsignup {
-    height: 40px;
+    height: 60px;
     width: 100vw;
     display: flex;
-  justify-content:center;
-    
+    justify-content: center;
+
     gap: 4vw;
 }
 
 .loginsignup .or {
+    height: 30px;
     color: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
 }
 
 .loginsignup a {
-   
+
     text-transform: capitalize;
     color: var(--quadcolor);
     z-index: 10;
@@ -326,14 +330,14 @@ position: relative;}
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; /* Use 'cover' for responsive background sizing */
+    background-size: cover;
     overflow: hidden;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
-    padding: 20px 0; /* Add padding top and bottom */
+    padding: 20px 0;
 
 }
 
@@ -345,33 +349,35 @@ position: relative;}
     text-transform: capitalize;
     text-align: center;
     width: 100%;
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px;
 }
 
 .imgcontainer {
-    width: 100%; /* Take full width */
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Add gap between images */
-    padding: 20px 0; /* Add padding for spacing */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .imgcontainer img {
-    width: 100%; /* Ensure images take full width of their container */
-    max-width: 50%; /* Limit the max width to prevent overflow */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s; /* Add transition effect */
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-.imgcontainer img.doraemon{ max-width: 70%;}
+.imgcontainer img.doraemon {
+    max-width: 70%;
+}
 
 .imgcontainer img:hover {
     transform: scale(1.05);
 }
 
 .livesports {
-flex-wrap: wrap;
+
     border-bottom: 1px solid #CCCCCC;
 }
 
@@ -412,11 +418,11 @@ flex-wrap: wrap;
     text-align: center;
     width: 40vw;
     margin-top: 18vh;
-    
+
 }
 
 div.faqbox {
-    height: 100vh;
+
     width: 99vw;
     position: relative;
     background-color: #141414;
@@ -438,7 +444,6 @@ div.faqbox {
 
 .faqbox .faq {
     position: relative;
-    height: 6%;
     width: 98%;
     color: white;
     display: flex;
@@ -449,13 +454,19 @@ div.faqbox {
     font-size: 20px;
     font-family: "poppins", serif;
     font-weight: 500;
+    transition: all 0.3s;
 }
 
-.faqbox .faq h4 {
-    color: var(--color);
-    cursor: pointer;
-    transition: color 0.3s;
+
+.faqbox .faq:hover {
+    background-color: #71797E;
+
 }
+
+
+
+
+
 
 i.fa-solid.fa-angle-down {
     margin-left: auto;
@@ -479,11 +490,11 @@ i.fa-solid.fa-angle-down:hover {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
-    /* Allow wrapping if needed */
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    margin-top: 10px;
+
+
 }
 
 footer ul {
@@ -494,7 +505,7 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+
     gap: 30px;
 }
 
@@ -508,6 +519,8 @@ footer ul li {
     text-decoration: underline;
     text-decoration-color: #000000;
     transition: all 0.3s;
+    display: flex;
+
 }
 
 footer ul li:hover {
@@ -520,4 +533,158 @@ footer ul li:hover {
 
 
 
-/* ADDING RESPONSIVENESS NOW ADDING RESPONSIVENESS NOW */
+/* ADDING RESPONSIVENESS NOW! ADDING RESPONSIVENESS NOW! */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    nav {
+        max-width: 30vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .planscontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+    }
+
+    .planscontainer .plans {
+        height: 20vh;
+        width: 80vw;
+    }
+
+
+    .planscontainer .plans a {
+
+        width: 68vw;
+        height: 52px;
+        margin-top: 12px;
+
+    }
+
+
+
+    .videocontainer {
+        padding-top: 25vh;
+        gap: 2px;
+    }
+
+    .videobox {
+        display: flex;
+        position: relative;
+
+    }
+
+    .videocontainer .videobox video {
+        width: 60vw;
+        margin-top: 2.5vh;
+        border: 1px solid white;
+
+    }
+
+
+
+    .videocontainerparent .introtext {
+        font-size: 2.5vh;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 5vh;
+        margin: 1vh 5vh;
+        text-align: center;
+
+
+    }
+
+    .videocontainer .videobox h4 {
+        margin-top: 3vh;
+    }
+
+    .childrencontent {
+        flex-direction: column;
+
+    }
+
+
+
+    .livesports {
+        display: none;
+    }
+
+    div.faqbox {
+
+        width: 100vw;
+        position: relative;
+    }
+
+    .faqbox .faqheading {
+        height: 14%;
+
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-family: "kanit", serif;
+        font-weight: 500;
+        color: var(--tertcolor);
+    }
+
+    .faqbox .faq {
+
+
+        margin: 10px;
+        padding: 30px;
+
+        font-size: 25px;
+
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+
+
+
+
+    i.fa-solid.fa-angle-down {
+        display: none;
+
+    }
+
+
+
+    footer {
+
+        flex-direction: column;
+        position: relative;
+    }
+
+    footer ul {
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    footer ul li {
+        font-size: 10px;
+
+    }
+
+
+
+
+
+
+
+
+}
