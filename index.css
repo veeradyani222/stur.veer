@@ -626,8 +626,7 @@ footer ul li:hover {
 
     .faqbox .faqheading {
         height: 14%;
-        width: 90vw;
-
+        width: 80vw;
         text-align: center;
         color: white;
         display: flex;
@@ -689,7 +688,7 @@ footer ul li:hover {
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:720px) {
 
     .livesports{display: none;
     }
