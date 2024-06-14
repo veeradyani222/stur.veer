@@ -243,7 +243,7 @@ i.fa-solid.fa-crown {
     height: auto;
     margin-top: 50px;
     border: 2px solid black;
-    transition: border 0.3s, transform 0.3s;
+    transition: all 0.3s;
 
 }
 
@@ -581,12 +581,14 @@ footer ul li:hover {
         display: flex;
         position: relative;
 
+
     }
 
     .videocontainer .videobox video {
         width: 60vw;
         margin-top: 2.5vh;
         border: 1px solid white;
+        transition: all 0.3s;
 
     }
 
