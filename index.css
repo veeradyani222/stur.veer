@@ -629,8 +629,6 @@ footer ul li:hover {
     .faqbox .faqheading {
         width: 80%;
         
-        text-align: center;
-        color: white;
         display: flex;
         justify-content: center;
        
