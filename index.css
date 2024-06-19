@@ -627,13 +627,10 @@ footer ul li:hover {
     }
 
     .faqbox .faqheading {
-        height: 18%;
-        
+        height: 13%;
         text-align: center;
-        color: white;
         display: flex;
         justify-content: center;
-       
         font-size: 35px;
         font-family: "kanit", serif;
         font-weight: 500;
