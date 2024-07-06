@@ -377,7 +377,8 @@ i.fa-solid.fa-crown {
 }
 
 .livesports {
-
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #CCCCCC;
 }
 
